@@ -319,27 +319,13 @@ gen_mixed_models <- function(project) {
     input_data$numberRequestedReviewer
   
   # Set the feature classes
-  # activity_feats = c("buggy", "commits", "totalComments", "totalIssuesAct", "totalPullsAct")
-  # experience_feats = c("buggy", "commits", "REXPCommit", "SEXPCommit", "expActivity", "REXPActivity", "expReview", 
-  #                      "REXPReview", "activeDays")
-  # code_feats = c("buggy", "modifiedFiles", "linesChanged", "hasTests")
-  # developer_feats = c("buggy", "medianCommits", "medianModifiedFiles", "medianLinesChanged", 
-  #                     "buggyPercent", "testsCount", "testPresence", "percentPullRequestsMerged", 
-  #                     "insertionPoints", "commitFrequency")
   paper_feats = c("buggy", "commits", "REXPCommit", "SEXPCommit", "expReview", "REXPReview", "modifiedFiles", 
                   "linesChanged", "medianModifiedFiles", "medianLinesChanged", "testPresence", "ownership", "medianOwnership", 
                   "managementPercent", "reengineeringPercent", "correctiveEngineeringPercent", "forwardEngineeringPercent",
-                  "previousBuggyPercent", "totalComments", "repositoryTime")
+                  "previousBuggyPercent", "totalComments", "repositoryTime", "socialDistance", "medianSocialDistance", 
+                  "contributions")
   
-  # Run a glm for: (i) activity features; (ii) code features; (iii) developer features; 
-  # (iv) activity features + code features; and (v) activity features + code features + developer features.
-  # glm_feats(input_data, activity_feats)
-  # glm_feats(input_data, experience_feats)
-  # glm_feats(input_data, code_feats)
-  # glm_feats(input_data, developer_feats)
-  # glm_feats(input_data, unique(c(activity_feats, experience_feats)))
-  # glm_feats(input_data, unique(c(activity_feats, experience_feats, code_feats)))
-  # glm_feats(input_data, unique(c(activity_feats, experience_feats, code_feats, developer_feats))) 
+  # Run a glm
   glm_feats(input_data, paper_feats)
   
 }
