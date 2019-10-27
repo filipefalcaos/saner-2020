@@ -1,0 +1,32 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Custom CSS
+body {
+    background: #f2f2f2;
+}
+
+// Header
+#header_wrap .inner {
+    padding: 50px 15px 30px 15px;   
+}
+
+// Content
+#main_content_wrap {
+    border-bottom: 0;
+}
+
+.inner {
+    max-width: 978px;
+    padding: 20px 15px;
+}
+
+table {
+    width: 100%;   
+}
+
+img {
+    max-width: 100%;
+}

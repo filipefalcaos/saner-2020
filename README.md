@@ -3,6 +3,8 @@ Website for the research paper ***"On Relating Technical, Social Factors, and th
 
 In this repository you will find the source code used to: (i) run the SZZ algorithm; (ii) collect all the data used; (iii) compute the metrics; and (iv) perform the statistical analyses. In this repository you will also find the data we collected and used in our analyses. Moreover, we provide some examples on how the analyses were conducted and a deeper characterization of the data collected.
 
+To see the files in the repository, click on the **"View on GitHub"** button at the top of this page, or click on this [link](https://github.com/filipefalcaos/sbes-2019).
+
 ### Methodology Example
 To better understand the methodology of our study, we provide a real example. Let's consider the  commit ***#3cd54fc4*** authored by the developer *martijnvg* on 13 September, 2012 in the ***Elasticsearch*** project. After analyzing this commit, we observed that most of the commit changes are related to the introduction of tests and reengineering  of the source code to improve conditionals. In particular, the commit *#3cd54fc4* involved 11 files, 313 additions, and 111 deletions.
 
@@ -12,7 +14,7 @@ In our study, we use the commit *#51e69e1*, which fixed the bug, as an input to 
 
 Based on a project's commits, we calculate the metrics described in the Section 2 of the paper. After this process, the metrics for each project should look like this:
 
-![Metrics Sample](/images/metrics.png)
+![Metrics Sample](/assets/images/metrics.png)
 
 Finally, we use these metrics to perform the analysis on RQ1 and RQ2. For RQ1, we divide the values of a metric in two populations by the ***buggy*** attribute. Then, we perform the ***Wilcoxon Test*** and the ***Cliff's Delta*** analyses based on these two populations. For RQ2, we set the metrics as predictors in a ***multiple logistic regression*** model and the ***buggy*** attribute as the response variable.
 
