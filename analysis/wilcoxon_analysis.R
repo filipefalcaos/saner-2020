@@ -41,7 +41,7 @@ wilcoxon_test <- function(input_data, metric, output_data) {
 metrics <- c("commits", "SEXPCommit", "REXPCommit", "expReview", "REXPReview", "testPresence", "medianLinesChanged",
              "linesChanged", "medianModifiedFiles", "modifiedFiles", "medianOwnership", "ownership", "reengineeringPercent",
              "correctiveEngineeringPercent", "forwardEngineeringPercent", "managementPercent", "previousBuggyPercent",
-             "totalComments", "repositoryTime")
+             "totalComments", "repositoryTime", "socialDistance", "medianSocialDistance", "contributions")
 
 # Create the output dataframe
 output_data <- data.frame(metric = character(), pvalue = double(), bonferroni = double(), cliff = double(), cliff_ctg = character())
