@@ -19,6 +19,15 @@ Based on a project's commits, we calculate the metrics described in the Section 
 Finally, we use these metrics to perform the analysis on RQ1 and RQ2. For RQ1, we divide the values of a metric in two populations by the ***buggy*** attribute. Then, we perform the ***Wilcoxon Test*** and the ***Cliff's Delta*** analyses based on these two populations. For RQ2, we set the metrics as predictors in a ***multiple logistic regression*** model and the ***buggy*** attribute as the response variable.
 
 ### SZZ validation
+We conducted a careful manual validation on a sample of 922 bug-introducing changes reported by SZZ. This sample presents a margin of error of 4% at a confidence level of 99%. Four pairs of researchers (familiar with the SZZ algorithm) from our research lab validated this sample. Each pair was responsible for a fraction of the sample, and each individual validated the same candidate bug-introducing changes. To take into account possible subjectivity during the validation, the researchers classified each candidate into four levels of certainty: "low", "moderate", "high", and "absolute". The levels are described below:
+
+- **Absolute**: "I am sure this point introduced the bug";
+- **High**: "There is a strong suspicion that this point introduced the bug, although the root cause was not found";
+- **Moderate**: "There are reasonable chances that this point introduced the bug";
+- **Low**: "There is a distant (or missing) possibility that this point introduced the bug".
+
+In the cases the researchers of a pair classified a candidate very differently (e.g., “low” and “absolute”), one of the authors solved the conflict. After the validation procedure, we obtained an accuracy of 65% for our SZZ implementation.
+
 The SZZ validation is available on this [link](https://drive.google.com/drive/folders/1uoTco8MFKPLb1kgOiGjl37AQboRLHxkA?usp=sharing).
 
 ### Data collected
