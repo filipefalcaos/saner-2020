@@ -1,5 +1,5 @@
 # SANER-2020
-Website for the research paper ***"On Relating Technical, Social Factors, and the Introduction of Bugs"***, submitted to the *27th IEEE International Conference on Software Analysis, Evolution and Reengineering* (SANER 2020).
+[Website](https://research-github-saner.github.io/saner-2020/) for the research paper ***"On Relating Technical, Social Factors, and the Introduction of Bugs"***, submitted to the *27th IEEE International Conference on Software Analysis, Evolution and Reengineering* (SANER 2020).
 
 In this repository you will find the source code used to: (i) run the SZZ algorithm; (ii) collect all the data used; (iii) compute the metrics; and (iv) perform the statistical analyses. In this repository you will also find the data we collected and used in our analyses. Moreover, we provide some examples on how the analyses were conducted and a deeper characterization of the data collected.
 
