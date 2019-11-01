@@ -3,7 +3,6 @@
 # Title     : Evaluate the metrics through the Wilcoxon Test
 # Objective : Evaluate if there is a difference between buggy and clean code in terms 
 #             of the technical and social metrics
-# Created by: Filipe Falcão, filipebatista@ic.ufal.br
 # Created on: 27/03/18
 
 
@@ -47,7 +46,7 @@ metrics <- c("commits", "SEXPCommit", "REXPCommit", "expReview", "REXPReview", "
 output_data <- data.frame(metric = character(), pvalue = double(), bonferroni = double(), cliff = double(), cliff_ctg = character())
 
 # Set current metrics file
-setwd("/Users/filipefalcao/developer-trust/")
+setwd("<path>")
 current_metrics <- read.csv("metrics/metrics_spring-boot.csv")
 attach(current_metrics)
 
