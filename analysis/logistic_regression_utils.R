@@ -4,7 +4,6 @@
 # Objective : Provide functions to make it possible using the odds ratio of logistic regression models 
 #             to evaluate the developer metrics. It should be imported using the 'source' R function by
 #             the logistic_regression_analysis.R script
-# Created by: Filipe Falcão, filipebatista@ic.ufal.br
 # Created on: 27/03/18
 
 
@@ -306,7 +305,7 @@ gen_mixed_models <- function(project) {
     input_data <- bind_all_data()
   } else {
     # Read the input metrics file
-    input_path <- paste0("~/developer-trust/evaluation_data/bug_reports_validated/", project, "/metrics_", project, ".csv")
+    input_path <- paste0("<path>", project, "/metrics_", project, ".csv")
     input_data <- read.csv(input_path) 
   }
   
