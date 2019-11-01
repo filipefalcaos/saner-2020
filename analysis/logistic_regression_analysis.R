@@ -3,7 +3,6 @@
 # Title     : Evaluate the metrics through logistic regression models
 # Objective : Use the odds ratio of logistic regression models to evaluate the technical 
 #             and social metrics
-# Created by: Filipe Falcão, filipebatista@ic.ufal.br
 # Created on: 27/03/18
 
 
